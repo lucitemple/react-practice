@@ -1,4 +1,5 @@
 import "./App.css";
+import AddButton from "./AddButton";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
@@ -66,6 +67,7 @@ function Profile() {
           </ul>
         </Card.Body>
       </Card>
+      <AddButton />
     </Container>
   );
 }
