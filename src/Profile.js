@@ -20,7 +20,6 @@ const popeye = {
 function Profile() {
   return (
     <Container className="container">
-      {/* <div className="App-header"> */}
       <h1>Profile</h1>
       <Card style={{ width: "26rem" }}>
         <Card.Body>
@@ -60,7 +59,7 @@ function Profile() {
                 Twitter:
               </Card.Subtitle>
               <Card.Link className="details col-sm-7"
-                href="{popeye.twitterLink}">
+                href={popeye.twitterLink}>
                 {popeye.twitterUsername}
               </Card.Link>
             </li>
