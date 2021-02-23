@@ -1,4 +1,5 @@
 import "./App.css";
+import Card from "react-bootstrap/Card";
 
 /* Task instructions: Create a profile card for Popeye! Create a React component that will display all the data about Popeye.  Avatar should display as picture, twitterUsername should be a link to a Twitter account.  */
 
@@ -18,20 +19,26 @@ function Profile() {
   return (
     <div className="App">
       <h1>Profile</h1>
-      <h2>{popeye.name}</h2>
-      <img src={popeye.avatar} alt="Popeye Avatar" />
-      <p class="properties">Location:</p>
-      <p class="details">{popeye.location}</p>
-      <p class="properties">Favourite food:</p>
-      <p class="details">{popeye.foodType}</p>
-      <p class="properties">Age:</p>
-      <p class="details">{popeye.age}</p>
-      <p class="properties">Likes:</p>
-      <p class="details">{popeye.likes}</p>
-      <p class="properties">Twitter:</p>
-      <p class="details">
-        <a href={popeye.twitterLink}>{popeye.twitterUsername}</a>
-      </p>
+      <Card style={{ width: "18rem" }}>
+        <Card.Body>
+          <Card.Img variant="top" src={popeye.avatar} alt="Popeye Avatar" />
+          <Card.Title>{popeye.name}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">
+            Card Subtitle
+          </Card.Subtitle>
+          <Card.Text class="properties">Location:</Card.Text>
+          <Card.Text class="details">{popeye.location}</Card.Text>
+          <Card.Text class="properties">Favourite food:</Card.Text>
+          <Card.Text class="details">{popeye.foodType}</Card.Text>
+          <Card.Text class="properties">Age:</Card.Text>
+          <Card.Text class="details">{popeye.age}</Card.Text>
+          <Card.Text class="properties">Likes:</Card.Text>
+          <Card.Text class="details">{popeye.likes}</Card.Text>
+          <Card.Link href="{popeye.twitterLink}">
+            {popeye.twitterUsername}
+          </Card.Link>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
