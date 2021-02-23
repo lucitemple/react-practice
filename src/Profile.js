@@ -22,34 +22,45 @@ function Profile() {
     <Container className="container">
       {/* <div className="App-header"> */}
       <h1>Profile</h1>
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "26rem" }}>
         <Card.Body>
           <Card.Img variant="top" src={popeye.avatar} alt="Popeye Avatar" />
           <Card.Title className="title">{popeye.name}</Card.Title>
           <ul>
             <li>
-              <Card.Subtitle className="properties col-6">
+              <Card.Subtitle className="properties col-sm-5">
                 Location:
               </Card.Subtitle>
-              <Card.Text className="details col-6">{popeye.location}</Card.Text>
+              <Card.Text className="details col-sm-7">
+                {popeye.location}
+              </Card.Text>
             </li>
             <li>
-              <Card.Subtitle className="properties col-6">
+              <Card.Subtitle className="properties col-sm-5">
                 Favourite food:
               </Card.Subtitle>
-              <Card.Text className="details col-6">{popeye.foodType}</Card.Text>
+              <Card.Text className="details col-sm-7">
+                {popeye.foodType}
+              </Card.Text>
             </li>
             <li>
-              <Card.Subtitle className="properties col-sm-6">Age:</Card.Subtitle>
-              <Card.Text className="details col-sm-6">{popeye.age}</Card.Text>
+              <Card.Subtitle className="properties col-sm-5">
+                Age:
+              </Card.Subtitle>
+              <Card.Text className="details col-sm-7">{popeye.age}</Card.Text>
             </li>
             <li>
-              <Card.Subtitle className="properties">Likes:</Card.Subtitle>
-              <Card.Text className="details">{popeye.likes}</Card.Text>
+              <Card.Subtitle className="properties col-sm-5">
+                Likes:
+              </Card.Subtitle>
+              <Card.Text className="details col-sm-7">{popeye.likes}</Card.Text>
             </li>
             <li>
-              <Card.Subtitle className="properties">Twitter:</Card.Subtitle>
-              <Card.Link href="{popeye.twitterLink}">
+              <Card.Subtitle className="properties col-sm-5">
+                Twitter:
+              </Card.Subtitle>
+              <Card.Link className="details col-sm-7"
+                href="{popeye.twitterLink}">
                 {popeye.twitterUsername}
               </Card.Link>
             </li>

@@ -1,3 +1,7 @@
+#root {
+  background-color: #282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -57,7 +61,7 @@ h1 {
 
 .properties {
   color: #999999;
-  display: inline;
+  display: inline-block;
 }
 
 .details {
