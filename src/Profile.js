@@ -18,6 +18,19 @@ const popeye = {
     "https://www.denofgeek.com/wp-content/uploads/2020/05/Popeye-Spinach-1.jpg?resize=768%2C432",
 };
 
+// Extract data from popeye object for use in listitems
+let {name, twitterUsername, twitterLink, avatar, ...dataItems} = popeye;
+
+// Create array of card category subtitles
+const categoryText = ["Location: ", "Favourite Food: ", "Age: ", "Likes: "]
+
+const categories = Object.values(dataItems).map((prop, index) => (
+  <li key={prop}>
+        <Card.Subtitle className="properties col-sm-5">{categoryText[index]}</Card.Subtitle>
+        <Card.Text className="details col-sm-7">{prop}</Card.Text>
+      </li>
+));
+
 function Profile() {
   return (
     <Container className="container">
@@ -27,34 +40,7 @@ function Profile() {
           <Card.Img variant="top" src={popeye.avatar} alt="Popeye Avatar" />
           <Card.Title className="title">{popeye.name}</Card.Title>
           <ul>
-            <li>
-              <Card.Subtitle className="properties col-sm-5">
-                Location:
-              </Card.Subtitle>
-              <Card.Text className="details col-sm-7">
-                {popeye.location}
-              </Card.Text>
-            </li>
-            <li>
-              <Card.Subtitle className="properties col-sm-5">
-                Favourite food:
-              </Card.Subtitle>
-              <Card.Text className="details col-sm-7">
-                {popeye.foodType}
-              </Card.Text>
-            </li>
-            <li>
-              <Card.Subtitle className="properties col-sm-5">
-                Age:
-              </Card.Subtitle>
-              <Card.Text className="details col-sm-7">{popeye.age}</Card.Text>
-            </li>
-            <li>
-              <Card.Subtitle className="properties col-sm-5">
-                Likes:
-              </Card.Subtitle>
-              <Card.Text className="details col-sm-7">{popeye.likes}</Card.Text>
-            </li>
+          {categories}
             <li>
               <Card.Subtitle className="properties col-sm-5">
                 Twitter:
