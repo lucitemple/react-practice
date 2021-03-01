@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Profile from './Profile';
+import Cats from './Cats';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <Profile />
+    <Cats />
   </React.StrictMode>,
   document.getElementById('root')
 );

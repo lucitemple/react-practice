@@ -1,8 +1,6 @@
 import "./App.css";
 import AddButton from "./AddButton";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
+import {Container, Card} from "react-bootstrap/";
 
 /* Task instructions: Create a profile card for Popeye! Create a React component that will display all the data about Popeye.  Avatar should display as picture, twitterUsername should be a link to a Twitter account.  */
 
