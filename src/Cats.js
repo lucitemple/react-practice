@@ -8,7 +8,7 @@ function Cats() {
     <Container>
       <h1>Cat Web</h1>
       <CatButtons />
-      <body className="gallery container" >
+      <Container className="gallery" >
         <Row>
           <Col xs={6} md={4}>
             <Image
@@ -41,7 +41,7 @@ function Cats() {
             />
           </Col>
         </Row>
-        </body>
+        </Container>
     </Container>
   );
 }
