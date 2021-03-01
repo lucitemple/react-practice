@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Button } from "react-bootstrap";
 
 const AddButton = () => {
     const [count, setCount] = useState(0);
@@ -8,16 +9,16 @@ const AddButton = () => {
     };
     return (
       <div>
-        <Button handleClick={increment} />
+        <ButtonCount handleClick={increment} />
         <p style={{ display: "inline-block", padding: 10, color: "white", }}>{count}</p>
       </div>
     );
 };
 
-const Button = ({handleClick}) => (
-        <button type="button" onClick={handleClick}>
+const ButtonCount = ({handleClick}) => (
+        <Button type="button" onClick={handleClick}>
           Add
-        </button>
+        </Button>
 );
 
 export default AddButton;

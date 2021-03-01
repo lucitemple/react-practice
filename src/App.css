@@ -75,3 +75,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+.btn {
+  background-color: darkgray !important;
+  border-color: darkgray !important;
+  padding: 50;
+
+}
