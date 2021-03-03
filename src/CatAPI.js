@@ -1,3 +1,7 @@
+import React, { useState, useEffect } from "react";
+
+/* const apiId = 'd4cecf82-7a66-4503-8c49-1b7bc95dc5c5'; */
+
 function CatAPI() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -7,9 +11,9 @@ function CatAPI() {
   // this useEffect will run once
   // similar to componentDidMount()
   useEffect(() => {
-    fetch(
-      "https://api.example.com/itemshttps://thecatapi.com/v1/images?api_key=d4cecf82-7a66-4503-8c49-1b7bc95dc5c5"
-    )
+    const url = 'https://jsonplaceholder.typicode.com/posts'; //temp api
+      /* "https://thecatapi.com/v1/images/categories?api_key={apiId}"; */
+    fetch(url)
       .then((res) => res.json())
       .then(
         (result) => {
@@ -34,9 +38,7 @@ function CatAPI() {
     return (
       <ul>
         {items.map((item) => (
-          <li key={item.id}>
-            {item.name} {item.price}
-          </li>
+          <li key={item.id}>{item.title}</li>
         ))}
       </ul>
     );
