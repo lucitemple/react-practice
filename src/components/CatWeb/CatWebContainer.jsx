@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import CatButtons from "./CatButtons";
 import CatGallery from "./CatGallery";
+import "../Profile/Profile.css";
 
-function CatWebContainer() {
+export default function CatWebContainer() {
   const [category, setCategory] = useState(1);
 
   const handleClick = (category) => {
@@ -11,11 +12,10 @@ function CatWebContainer() {
   };
 
   return (
-    <Container id="catweb">
+    <Container className="App" id="catweb">
+      <h2>Cat Web</h2>
       <CatButtons handleClick={handleClick} />
       <CatGallery category={category} />
     </Container>
   );
 }
-
-export default CatWebContainer;

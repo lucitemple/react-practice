@@ -15,20 +15,18 @@ const categories = [
   },
 ];
 
-const CatButtons = ({ handleClick }) => {
+export default function CatButtons({ handleClick }) {
   return (
     <div>
       {categories.map((category) => (
         <Button
           size="lg"
-          onClick={() => handleClick(category.id)}
           key={category.id}
+          onClick={() => handleClick(category.id)}
         >
           {category.name}
         </Button>
       ))}
     </div>
   );
-};
-
-export default CatButtons;
+}
