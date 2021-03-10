@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Container, Button, Row, Col, Image } from "react-bootstrap/";
 
-import "./App.css";
+import "../Profile/Profile.css";
 
-function Cat() {
+function CatWeb() {
   const [url, setUrl] = useState("");
 
   function fetch_data() {
-    fetch("https://api.thecatapi.com/v1/images/search")
+    fetch("https://api.thecatapi.com/v1/images/search?limit=5")
       .then(
         (res) => {
           if (res.ok) {
@@ -23,7 +23,7 @@ function Cat() {
   }
 
   return (
-    <Container>
+    <Container id="catweb">
       <h1>Cat Web</h1>
       <nav className="cat___options">
         <Button value="boxes" size="lg" onClick={fetch_data("boxes")}>
@@ -41,7 +41,7 @@ function Cat() {
           <Col xs={6} md={4}>
             <Image src={url} thumbnail alt="" />
           </Col>
-          <Col xs={6} md={4}>
+{/*           <Col xs={6} md={4}>
             <Image src={url} thumbnail alt="" />
           </Col>
           <Col xs={6} md={4}>
@@ -52,11 +52,11 @@ function Cat() {
           </Col>
           <Col xs={6} md={4}>
             <Image src={url} thumbnail alt="" />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
   );
 }
 
-export default Cat;
+export default CatWeb;

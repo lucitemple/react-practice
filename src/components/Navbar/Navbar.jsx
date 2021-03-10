@@ -12,6 +12,7 @@ export default function WebNavBar() {
       variant="dark"
     >
       <Nav className="mr-auto">
+        <Nav.Link href="#addbutton">Add Button</Nav.Link>
         <Nav.Link href="#popeye">Popeye Profile</Nav.Link>
         <Nav.Link href="#catweb">Cat Web</Nav.Link>
         <Nav.Link href="#copycat">Copy Cat</Nav.Link>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 const AddButton = () => {
     const [count, setCount] = useState(0);
@@ -8,10 +8,10 @@ const AddButton = () => {
       setCount (currentCount => currentCount + 1);
     };
     return (
-      <div>
+      <Container id="addbutton">
         <ButtonCount handleClick={increment} />
         <p style={{ display: "inline-block", padding: 10, color: "white", }}>{count}</p>
-      </div>
+      </Container>
     );
 };
 
