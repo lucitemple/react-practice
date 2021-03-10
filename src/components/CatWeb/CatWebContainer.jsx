@@ -1,28 +1,21 @@
 import React, { useState } from "react";
-import {CatWeb} from './CatWeb';
+import { Container } from "react-bootstrap";
+import CatButtons from "./CatButtons";
+import CatGallery from "./CatGallery";
+import "../Profile/Profile.css";
 
-function CatWebContainer() {
-  const [url, setUrl] = useState("");
+export default function CatWebContainer() {
+  const [category, setCategory] = useState(1);
 
-  function fetch_data() {
-    fetch("https://api.thecatapi.com/v1/images/search?limit=5")
-      .then(
-        (res) => {
-          if (res.ok) {
-            return res.json();
-          }
-          throw new Error("Request Failed");
-        },
-        (networkError) => console.log(networkError.message)
-      )
-      .then((jsonRes) => {
-        setUrl(jsonRes[0].url);
-      });
-  }
+  const handleClick = (category) => {
+    setCategory(category);
+  };
 
   return (
-    <CatWeb />
+    <Container className="App" id="catweb">
+      <h2>Cat Web</h2>
+      <CatButtons handleClick={handleClick} />
+      <CatGallery category={category} />
+    </Container>
   );
 }
-
-export default CatWebContainer;
