@@ -9,8 +9,12 @@ const AddButton = () => {
     };
     return (
       <Container id="addbutton">
-        <ButtonCount handleClick={increment} />
-        <p style={{ display: "inline-block", padding: 10, color: "white", }}>{count}</p>
+        <row>
+          <ButtonCount handleClick={increment} />
+          <p style={{ display: "inline-block", padding: 10, color: "white" }}>
+            {count}
+          </p>
+        </row>
       </Container>
     );
 };
