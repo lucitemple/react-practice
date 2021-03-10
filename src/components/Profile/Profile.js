@@ -1,6 +1,6 @@
-import "./App.css";
+import "../Profile/Profile.css";
 import AddButton from "./AddButton";
-import {Container, Card} from "react-bootstrap/";
+import { Container, Card } from "react-bootstrap";
 
 /* Task instructions: Create a profile card for Popeye! Create a React component that will display all the data about Popeye.  Avatar should display as picture, twitterUsername should be a link to a Twitter account.  */
 
@@ -18,8 +18,8 @@ const popeye = {
 
 function Profile() {
   return (
-    <Container className="container">
-      <h1>Profile</h1>
+    <Container className="container" id="popeye">
+      <h2>Profile</h2>
       <Card style={{ width: "26rem" }}>
         <Card.Body>
           <Card.Img variant="top" src={popeye.avatar} alt="Popeye Avatar" />
