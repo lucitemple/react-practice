@@ -1,13 +1,14 @@
 import React from "react";
-import Profile from '../Profile/Profile.js';
-
+import WebNavBar from "../Navbar/Navbar.jsx";
+import Profile from "../Profile/Profile.js";
+import './App.css';
 
 export default function App() {
   return (
     <div className="App">
-    <h1>React Practice Projects</h1>
-    <Profile />
+      <WebNavBar />
+      <h1>React Practice Projects</h1>
+      <Profile />
     </div>
   );
 }
-

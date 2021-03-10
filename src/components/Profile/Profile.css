@@ -2,12 +2,15 @@
   background-color: #282c34;
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
+.App-link {
+  color: #61dafb;
+} 
 
-/* .container {
+.container {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -40,4 +43,4 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-} */
+}
