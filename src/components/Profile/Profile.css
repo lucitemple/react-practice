@@ -1,0 +1,46 @@
+#root {
+  background-color: #282c34;
+}
+
+/* .App {
+  text-align: center;
+} */
+
+.App-link {
+  color: #61dafb;
+} 
+
+.container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2 {
+  color: white;
+}
+
+.title {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.properties {
+  color: #999999;
+  display: inline-block;
+}
+
+.details {
+  color: black;
+  display: inline;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

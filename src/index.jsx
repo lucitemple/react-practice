@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App/App'
 import './index.css';
-import Profile from './Profile';
-import CopyCatContainer from './containers/CopyCatContainer';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Profile />
-    <CopyCatContainer />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
