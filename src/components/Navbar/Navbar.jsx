@@ -1,10 +1,16 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import './Navbar.css';
+import "./Navbar.css";
 
 export default function WebNavBar() {
   return (
-    <Navbar sticky="top" className="App-header" expand="lg">
+    <Navbar
+      sticky="top"
+      className="App-header"
+      expand="lg"
+      bg="dark"
+      variant="dark"
+    >
       <Nav className="mr-auto">
         <Nav.Link href="#popeye">Popeye Profile</Nav.Link>
         <Nav.Link href="#catweb">Cat Web</Nav.Link>

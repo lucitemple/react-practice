@@ -18,8 +18,8 @@ const popeye = {
 
 function Profile() {
   return (
-    <Container className="container">
-      <h1>Profile</h1>
+    <Container className="container" id="popeye">
+      <h2>Profile</h2>
       <Card style={{ width: "26rem" }}>
         <Card.Body>
           <Card.Img variant="top" src={popeye.avatar} alt="Popeye Avatar" />
