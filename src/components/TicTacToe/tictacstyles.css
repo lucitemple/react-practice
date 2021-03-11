@@ -47,14 +47,24 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
-  color:  whitesmoke
+  color:  whitesmoke;
+  display: inline-block;
+}
+
+.game-board {
+    display: inline-block;
 }
 
 .container {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
-  flex-direction: column;
+/*   flex-direction: column; */
   align-items: center;
   justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    display: block;
 }
