@@ -4,6 +4,7 @@ import Profile from "../Profile/Profile.js";
 import AddButton from "../AddButton/AddButton.js";
 import CatWebContainer from "../CatWeb/CatWebContainer.jsx";
 import CopyCatContainer from "../CopyCat/CopyCatContainer";
+import Game from "../TicTacToe/TicTacToe";
 import './App.css';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Profile />
       <CatWebContainer />
       <CopyCatContainer />
+      <Game />
     </div>
   );
 }

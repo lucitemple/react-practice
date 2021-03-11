@@ -15,7 +15,8 @@ export default function WebNavBar() {
         <Nav.Link href="#addbutton">Add Button</Nav.Link>
         <Nav.Link href="#popeye">Popeye Profile</Nav.Link>
         <Nav.Link href="#catweb">Cat Web</Nav.Link>
-        <Nav.Link href="#copycat">Copy Cat</Nav.Link>
+        <Nav.Link href="#copycat">Copycat</Nav.Link>
+        <Nav.Link href="#tictac">Tic-tac-toe</Nav.Link>
       </Nav>
     </Navbar>
   );
