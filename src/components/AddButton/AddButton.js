@@ -11,7 +11,7 @@ const AddButton = () => {
       <Container id="addbutton">
         <Row>
           <ButtonCount handleClick={increment} />
-          <p style={{ display: "inline-block", padding: 10, color: "white" }}>
+          <p style={{ display: "inline-block", padding: 10, color: "white", margin: "20px", }}>
             {count}
           </p>
         </Row>
