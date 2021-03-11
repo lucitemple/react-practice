@@ -17,3 +17,8 @@
 p {
   color: white;
 }
+
+.btn {
+  margin: 20px;
+  padding: 20px;
+}
