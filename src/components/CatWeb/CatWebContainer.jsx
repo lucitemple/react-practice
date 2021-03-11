@@ -5,7 +5,7 @@ import CatGallery from "./CatGallery";
 import "../Profile/Profile.css";
 
 export default function CatWebContainer() {
-  const [category, setCategory] = useState(1);
+  const [category, setCategory] = useState(null);
 
   const handleClick = (category) => {
     setCategory(category);

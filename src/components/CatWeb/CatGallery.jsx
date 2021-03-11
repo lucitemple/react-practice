@@ -19,12 +19,15 @@ export default function CatGallery({ category }) {
   if (!images) {
     return <h2>Loading!</h2>;
   }
+  if (category == null) {
+    return <p>Please select a category for cat pics</p>;
+  }
 
   return (
     <Row className="cats">
-        {images.map((image) => (
-          <Image src={image.url} key={image.id} alt="" />
-        ))}
+      {images.map((image) => (
+        <Image src={image.url} key={image.id} alt="" />
+      ))}
     </Row>
   );
 }
