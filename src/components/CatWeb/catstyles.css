@@ -1,4 +1,15 @@
 .cats * {
-  height: 100px;
   margin: 20px;
+  max-width: 18rem;
+  max-height: 60vh;
+}
+
+.container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
